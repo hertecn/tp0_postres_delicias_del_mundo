@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fans de Postres</title>
+    <link rel="shortcut icon" href="img/icono.ico" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header-mobile">
+            <h1 class="logo">Delicias del mundo</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+                <div class="icono-logo">
+                    <img class="icono" src="img/icono.png" alt="">
+                    <div class="logo-delicias">
+                        <h1 class="logo">Delicias del<br>mundo</h1>
+                    </div>
+                </div>
+
+
+            </header>
+            <nav>
+                <ul>
+
+                    <li>
+                        <button onclick='window.location.href="#titulo-principal";' class="boton-menu active"
+                            id="button1">Origen de los postres</button>
+                    </li>
+                    <li>
+                        <button onclick='window.location.href="#section-2";' class="boton-menu" id="button2">Recetas del
+                            mundo</button>
+                    </li>
+                    <li>
+                        <button onclick='window.location.href="#creativos";' class="boton-menu" id="button3">Postres
+                            creativos</button>
+                    </li>
+                    <li>
+                        <button onclick='window.location.href="#notipostre";' class="boton-menu"
+                            id="button4">Notipostres</button>
+                    </li>
+                    <li>
+                        <button onclick='window.location.href="#formulario";' class="boton-menu"
+                            id="button5">Contáctenos</button>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <footer>
+                <div class="container_footer">
+                    <div>
+                        <p class="text-footer">Diseñado por<br><span>Hernan Ledesma<br>y Joshelin Torres</span></p>
+                    </div>
+                </div>
+            </footer>
+        </aside>
+
+        <main>
+            <section class="section-1">
+                <h2 id="titulo-principal">Viaja por el Mundo con Nuestros Postres</h2>
+                <p>"Aquí, en nuestra página, te llevamos a
+                    un viaje dulce por el mundo de los postres. Desde los clásicos reconfortantes
+                    hasta las creaciones más innovadoras, te traemos recetas auténticas de los
+                    rincones más dulces del planeta. Sumérgete en un mundo de sabores tentadores,
+                    aprende a crear delicias que endulzarán tus momentos más especiales y compartirás
+                    sonrisas con cada bocado. ¡Prepárate para desatar al chef repostero que llevas dentro!"</p>
+
+                <div id="texto-historia" class="texto-historia">
+                    <br>
+                    <p>Los postres tienen un origen fascinante que se remonta a épocas antiguas. A lo largo de la
+                        historia, se han convertido en un elemento cultural y culinario fundamental en la mayoría de las
+                        sociedades.
+
+                        Su historia se entrelaza con el desarrollo de la cocina y la evolución de los ingredientes
+                        disponibles en cada región. Los primeros postres solían ser simples, a menudo frutas frescas o
+                        miel, servidos después de las comidas para satisfacer el gusto por lo dulce.
+
+                        En las antiguas civilizaciones, desde los egipcios hasta los romanos, se encuentran referencias
+                        a preparaciones dulces, aunque no eran exactamente lo que consideraríamos postres hoy en día.
+                        Los romanos, por ejemplo, disfrutaban de postres como frutas con miel o queso con miel.
+                        Durante la Edad Media en Europa, los postres comenzaron a incluir ingredientes como azúcar,
+                        especias y lácteos, lo que permitió una mayor variedad y complejidad en las preparaciones. Sin
+                        embargo, estos eran lujos reservados principalmente para la realeza y la nobleza debido a la
+                        dificultad de obtener ciertos ingredientes.
+
+                        Con el tiempo, la expansión comercial y los descubrimientos geográficos llevaron la introducción
+                        de nuevos ingredientes a diferentes partes del mundo. El chocolate de América, el azúcar
+                        refinada del Medio Oriente y las especias de Asia se convirtieron en elementos clave en la
+                        elaboración de postres.
+
+                        La Revolución Industrial y la producción en masa de azúcar, harina y otros ingredientes
+                        democratizaron los postres, haciéndolos accesibles a una gama más amplia de personas.
+
+                        Hoy en día, los postres son una expresión artística y culinaria en constante evolución, donde
+                        chefs y amantes de la cocina experimentan con sabores, texturas y presentaciones para crear
+                        delicias que van desde lo tradicional hasta lo más innovador. ¡La historia de los postres es un
+                        viaje dulce y apetitoso a través del tiempo y las culturas!
+                    </p>
+                </div>
+
+                <button id="btn-historia" class="btn-receta">Historia...</button>
+
+            </section>
+
+            <section class="section-2" id="section-2">
+
+                <article>
+                    <div class="receta" id="receta">
+                        <div class="contenedor-imagenes">
+                            <div class="imagenes">
+                                <img class="receta-imagen" src="img/cheesake1.jpg" alt="">
+                                <img class="receta-imagen" src="img/cheesake2.jpg" alt="">
+                                <img class="receta-imagen" src="img/cheesake3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="descripcion">
+                            <div>
+                                <h3 class="receta-titulo">Cheesecake de Matcha</h3>
+
+                                <p class="parrafo-descripcion">El cheesecake de Matcha es una mezcla de cultura
+                                    entre Japon (matcha) y la antigua grecia (cheesecake), donde estos postres
+                                    se consideraban una fuente de energia y se utilizaba como alimento para los
+                                    primeros atletas de los juegos olimpicos. A lo largo de los siglos, la receta
+                                    se ha modificado y adaptado a diferentes culturas y regiones del mundo.</p>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="botones-recetas">
+                        <button id="btn-receta1" class="btn-receta">Leer Receta</button>
+                    </div>
+                    <div id="texto-receta" class="texto-receta">
+
+                        <p>Ingredientes
+                            Para la base :<br>
+                            * 150g galletas tipo María<br>
+                            * 70g de manteca<br>
+                            <br>
+                            Relleno de queso:<br>
+                            * 100g de azúcar<br>
+                            * 50g de harina<br>
+                            * 4 huevos<br>
+                            * 20g de té matcha<br>
+                            * Jugo de medio limón<br>
+                            * 400g de queso crema a temperatura ambiente<br>
+                            <br>
+                            Elaboración paso a paso<br>
+                            1. Precalentar el horno a 180 °C.<br>
+                            2. Triturar las galletas junto con la manteca en una procesadora hasta obtener un
+                            arenado.<br>
+                            3. Engrasar con manteca un molde de tarta de 18 cm y colocar la mezcla de galletas y
+                            manteca. Esparcir con la palma de las manos o con la ayuda de una cuchara hasta cubrir
+                            toda
+                            la base. Llevar el molde al freezer para que se endurezca.<br>
+                            4. Colocar en un recipiente el queso crema y los 100g de azúcar. Batir hasta lograr una
+                            mezcla homogénea.<br>
+                            5. Ir agregando los huevos de a uno.<br>
+                            6. Mezclar en otro recipiente el té verde con 50g de harina y colocar en el recipiente
+                            del
+                            queso.<br>
+                            7. Continuar batiendo y, finalmente, agregar el jugo de limón.<br>
+                            8. Retirar la base del freezer y colocar la crema de queso con té matcha por encima.<br>
+                            9. Llevar al horno, disminuyendo la temperatura a 150° C por una hora aproximadamente.
+                            Hornear a baño María.<br>
+                            10. Una vez lista apagar el horno y dejar enfriar dentro del mismo.<br>
+                            11. Dejar reposar un par de horas en la heladera.<br>
+                            12. Desmoldar<br>
+                        </p>
+                    </div>
+                </article>
+
+
+
+
+
+                <article>
+                    <div class="receta" id="receta">
+                        <div class="contenedor-imagenes">
+                            <div class="imagenes">
+                                <img class="receta-imagen" src="img/masa-bretona2.jpg" alt="">
+                                <img class="receta-imagen" src="img/masa-bretona3.jpg" alt="">
+                                <img class="receta-imagen" src="img/masa-bretona4.jpg" alt="">
+
+                            </div>
+                        </div>
+                        <div class="descripcion">
+                            <div>
+                                <h3 class="receta-titulo">Masa Bretona</h3>
+
+                                <p class="parrafo-descripcion">Masa bretona: es una variación de la masa sablé, que
+                                    se origina en la región de Bretaña, en Francia. Es similar a la masa sablé, pero
+                                    tiene una textura más gruesa y rústica, debido a la incorporación de harina de trigo
+                                    sarraceno. Es perfecta para postres que requieren una textura más rústica y un sabor
+                                    más pronunciado, como las galletas y los pasteles de frutas.</p>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="botones-recetas">
+                        <button id="btn-receta2" class="btn-receta">Leer Receta</button>
+                    </div>
+                    <div id="texto-receta2" class="texto-receta">
+
+                        <p>Ingredientes:<br>
+                            -200 gr de manteca<br>
+                            -150 gr de azúcar<br>
+                            -Ralladura de 1 limón<br>
+                            -250 gr de harina 0000<br>
+                            -8 gr de polvo para hornear<br>
+                            -pizca de sal<br>
+                            -4 yemas<br>
+                            <br>
+                            Preparación<br>
+                            -Batir la manteca, el azúcar, la ralladura hasta blanquear.<br>
+                            -Agregar las yemas<br>
+                            -Sumar la harina tamizada con el polvo de hornear.<br>
+                            -Estirar la masa, llevarla a frío y luego colocarla en el molde.<br>
+                            - llevar al horno precalentado, hornear a 170° por 12 minutos aproximadamente.<br>
+                            <br>
+                            Espero que les cope y que me cuenten si la hacen 😊<br>
+
+                            -----------------------------------------------------------<br>
+                            receta de este budín 😊👇🏻<br>
+                            <br>
+                            Ingredientes:<br>
+                            - 100 gr. manteca pomada<br>
+                            - 150 gr. azúcar común<br>
+                            - 2 huevos<br>
+                            - 1 cdita. de esencia de vainilla<br>
+                            - 180 gr. de café caliente<br>
+                            - 20 gr. de cacao amargo en polvo<br>
+                            - 250 gr. de harina 0000<br>
+                            - 10 gr. de polvo para hornear<br>
+                            <br>
+                            Procedimiento:<br>
+                            1 Batir la manteca pomada con el azúcar hasta cremar<br>
+                            2 Colocar los huevos de uno en uno, la esencia de vainilla y mezclar<br>
+                            3- Disolver el café instantáneo en agua e incorporarlo a la mezcla anterior<br>
+                            4- Incorporar los secos tamizados en dos partes: harina, polvo de hornear, cacao.<br>
+                            5- Poner la mezcla en una budinera previamente enmantecada y enharinada, y lo hornear a 175°
+                            por 40/45 minutos o hasta que al pincharlo con un palillo esté salga seco.<br>
+                            Dejar enfriar.<br>
+                            Terminar de decorar a gusto con una ganache o espolvoréalo con azúcar impalpable.<br>
+                        </p>
+                    </div>
+                </article>
+
+
+                <article>
+                    <div class="receta" id="receta">
+                        <div class="contenedor-imagenes">
+                            <div class="imagenes">
+                                <img class="receta-imagen" src="img/dulce-de-leche2.png" alt="">
+                                <img class="receta-imagen" src="img/dulce-de-leche3.png" alt="">
+                                <img class="receta-imagen" src="img/dulce-de-leche4.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="descripcion">
+                            <div>
+                                <h3 class="receta-titulo">Dulce de Leche</h3>
+
+                                <p class="parrafo-descripcion">En Argentina hay un relato popular, que
+                                    luego se convirtió en «La Historia oficial» acerca de la invención
+                                    del dulce. Cuenta la leyenda que el dulce fue producto de un hecho
+                                    fortuito, en la ciudad de Cañuelas en 1829, durante una reunión entre
+                                    el General Lavalle y el General Juan Manuel de Rosas, cuando una criada
+                                    de la estancia olvidó la lechada (mezcla de leche y azúcar) al fuego.</p>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="botones-recetas">
+                        <button id="btn-receta3" class="btn-receta">Leer Receta</button>
+                    </div>
+                    <div id="texto-receta3" class="texto-receta">
+
+                        <p>Ingredientes:<br>
+                            2 litros leche.<br>
+
+                            500 grs de azúcar<br>
+
+                            1 cucharada de esencia de vainilla.<br>
+
+                            1 cucharada de bicarbonato de sodio.<br>
+                            <br>
+                            Preparación:<br>
+                            1- Volcar en una olla los 2 litros de leche.<br>
+
+                            2- Agregar en forma de lluvia el azúcar y luego la esencia de vainilla.<br>
+
+                            3- Poner la olla a fuego bajo y revolver de vez en cuando para que no se pegue.<br>
+
+                            4- Agregar una cucharada de bicarbonato de sodio.<br>
+
+                            5- Cocinar por el lapso aproximado de dos horas, hasta que la preparación se oscurezca y
+                            tome una textura espesa y cremosa. Siempre revolver constantemente así evitar que se pegue.
+                            <br>
+
+                            6- Para saber si está listo el dulce de leche, tomar una cucharada del mismo y echar en un
+                            plato bien frío (en lo posible del congelador), si vemos que poniendo el dulce no se vuelve
+                            a juntar en el centro es porque está listo.<br>
+
+                            7- Retirar del fuego, dejar enfriar y luego guardar el dulce en frascos.<br>
+                        </p>
+                    </div>
+                </article>
+
+
+                <article>
+                    <div class="receta" id="receta">
+                        <div class="contenedor-imagenes">
+                            <div class="imagenes">
+                                <img class="receta-imagen" src="img/budin-de-manzanas1.jpg" alt="">
+                                <img class="receta-imagen" src="img/budin-de-manzanas2.jpg" alt="">
+                                <img class="receta-imagen" src="img/budin-de-manzanas3.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="descripcion">
+                            <div>
+                                <h3 class="receta-titulo">Budín de manzanas</h3>
+
+                                <p class="parrafo-descripcion">El budín de manzana es uno de los platos que nos remontan
+                                    a la infancia, a la cocina de la abuela, a esos olores que inundaban la casa y nos
+                                    hacen salivar. Pero su origen es muy anterior a eso. Se cree que nació en Inglaterra
+                                    del siglo XIX, como una forma económica y sabrosa de aprovechar las manzanas de
+                                    temporada.</p>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="botones-recetas">
+                        <button id="btn-receta4" class="btn-receta">Leer Receta</button>
+                    </div>
+                    <div id="texto-receta4" class="texto-receta">
+
+                        <p>
+                            Ingredientes:<br>
+                            -4 huevos<br>
+                            -200 gr azúcar<br>
+                            -1/2 cucharadita de vainilla<br>
+                            -80 ml leche<br>
+                            -40 ml aceite<br>
+                            -250 gr de crema de leche<br>
+                            -280 gr harina<br>
+                            -10 gr polvo de hornear<br>
+                            -ralladura de limón<br>
+                            -Nueces para cubierta (opcional)<br>
+                            <br>
+                            Procedimiento<br>
+                            -Mezclar azúcar con ralladura de limón.<br>
+                            -Incorporar huevos, vainilla y batir. -Agregar aceite y continuar batiendo.<br>
+                            -Colocamos los secos intercalados con los líquidos (crema y leche)<br>
+                            <br>
+                            Colocamos la preparación en molde hasta la mitad. Colocamos las manzanas caramelizadas y<br>
+                            cubrimos con el resto de la masa.<br>
+                            Hornear a 165-170 grados por 35-40 minutos aproximadamente.<br>
+
+                            Manzanas caramelizadas<br>
+                            Colocar en una olla 2 manzanas cortadas en cubos con 45 gr de azúcar y 30 gr de manteca.<br>
+                            <br>
+                            Ganache montada de canela<br>
+                            Ingredientes:<br>
+                            -30 gr Crema de leche I<br>
+                            -40gr Choco blanco<br>
+                            -120 gr Crema de leche II<br>
+                            -1gr Gelatina (hidratar con 5ml de agua)<br>
+                            -1 cdita Canela<br>
+
+                            Procedimiento:<br>
+                            Calentamos la crema de leche I con la canela. Incorporamos la gelatina hidratada y la<br>
+                            volcamos sobre el chocolate fundido. Mixeamos. Colocamos la crema de leche II y volvemos
+                            a<br>
+                            mixear. <br>
+                            Llevar a la heladera con un film en contacto por 12-24 horas.<br>
+                            Batir antes de utilizar.<br>
+                        </p>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="receta" id="receta">
+                        <div class="contenedor-imagenes">
+                            <div class="imagenes">
+                                <img class="receta-imagen" src="img/Golfeados1.jpeg" alt="">
+                                <img class="receta-imagen" src="img/Golfeados2.jpg" alt="">
+                                <img class="receta-imagen" src="img/Golfeados3.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="descripcion">
+                            <div>
+                                <h3 class="receta-titulo">Golfeados</h3>
+
+                                <p class="parrafo-descripcion">El origen de los golfeados se remonta a
+                                    mediados de la primera mitad del siglo pasado. Según la tradición popular,
+                                    el nombre de "golfeado" se originó hace más de un siglo en una hacienda
+                                    cafetera que suministraba café a Caracas, "Hacienda El Hoyo de las Tapias".
+                                    Los trabajadores decían que se parecían a la semilla de caracol que nace
+                                    del café. Los golfeados se popularizaron en Petare, donde se elaboraban en
+                                    hornos de leña. Los hermanos Genaro y María Duarte fueron los encargados de
+                                    popularizarlos.</p>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="botones-recetas">
+                        <button id="btn-receta5" class="btn-receta">Leer Receta</button>
+                    </div>
+                    <div id="texto-receta5" class="texto-receta">
+
+                        <p>
+                            Ingredientes:<br>
+                            800 gramos de harina de trigo<br>
+                            2 cucharadas de polvo de hornear<br>
+                            200 mililitros de leche<br>
+                            150 gramos de azúcar<br>
+                            2 huevos<br>
+                            100 gramos de mantequilla<br>
+                            2 cucharaditas de vainilla<br>
+                            1 cucharadita de sal<br>
+                            400 gramos de queso blanco rallado<br>
+                            200 gramos de papelón o panela<br>
+                            ¼ taza de agua<br>
+                            2 cucharadas de miel<br>
+                            Canela en polvo al gusto<br>
+                            Anís dulce al gusto<br>
+                            Utensilios<br>
+                            Una bandeja para horno enmantequillada<br>
+                            <br>
+                            Preparación:<br>
+                            Lo primero que debes hacer es preparar el melado de papelón. Para ello, coloca en una
+                            olla<br>
+                            la panela y el agua. Pon a cocinar a fuego lento removiendo continuamente hasta que se<br>
+                            derrita el papelón y se forme el melado. Reserva.<br>
+                            Por otro lado, en un recipiente grande coloca la leche, la mantequilla, la vainilla, el<br>
+                            azúcar, el polvo para hornear, los huevos y dos cucharadas de melado. Remueve y poco a
+                            poco<br>
+                            ve agregando la harina hasta que se forme una masa suave y homogénea.<br>
+                            Seguidamente, añade el anís y amasa por unos 5 minutos. Luego, enharina la mesa. Coloca
+                            la<br>
+                            masa y con la ayuda de un rodillo extiéndela y dale forma rectangular. La masa debe tener
+                            un<br>
+                            grosor de 1 cm.<br>
+                            Posteriormente, pinta la masa con el melado de papelón y espolvorea el queso y la canela
+                            por<br>
+                            toda la superficie.<br>
+                            Luego, enrolla la masa hasta obtener un rollo y córtalo porciones de unos 5 cms de ancho<br>
+                            aproximadamente.<br>
+                            Coloca cada golfeado en la bandeja y déjalos reposar por una hora en un lugar cálido y<br>
+                            oscuro. Pasado el tiempo, rocía cada roll con un poquito de agua, esto ayudará a que
+                            queden<br>
+                            más suaves.<br>
+                            Lleva a un horno precalentado a 180°C y déjalos allí por unos 25 minutos. Retira,
+                            píntalos<br>
+                            nuevamente con melado y mételos otra vez al horno por 5 minutos más.<br>
+                            Retira y espolvorea un poco más de queso rallado. Sirve y degusta.<br>
+                            Tips para hacer golfeados venezolanos<br>
+                            Puedes comerlos fríos o calientes.<br>
+                            En la región capital se acostumbra colocar por encima una lonja de queso de mano, un
+                            queso<br>
+                            fresco y suave típico del país.<br>
+                            Puedes utilizar levadura instantánea en vez de polvo de hornear.<br>
+                        </p>
+                    </div>
+                </article>
+
+
+            </section>
+
+            <section class="section-3">
+                <h2 id="creativos">Postres creativos</h2>
+                <p>¡Sorprendete con ésta galeria de postres creativos e innovadores! No te dejes engañar con algunos.
+                    Son auténticos postres con apariencia reales.</p>
+                <div class="creatividades">
+                    <img id="creatividad-imagen" class="creatividad-imagen" src="img/dragon-postre.png" alt="">
+                    <img id="creatividad-imagen" class="creatividad-imagen" src="img/oso-postre.png" alt="">
+                    <img id="creatividad-imagen" class="creatividad-imagen" src="img/perro2-postre.png" alt="">
+                    <img id="creatividad-imagen" class="creatividad-imagen" src="img/serpiente-postre.png" alt="">
+                    <img id="creatividad-imagen" class="creatividad-imagen" src="img/perro-postre.png" alt="">
+                    <img id="creatividad-imagen" class="creatividad-imagen" src="img/helado-postre.png" alt="">
+                    <img id="creatividad-imagen" class="creatividad-imagen" src="img/papas-postre.png" alt="">
+                    <img id="creatividad-imagen" class="creatividad-imagen" src="img/esponja-postre.png" alt="">
+                    <img id="creatividad-imagen" class="creatividad-imagen" src="img/planta-postre.png" alt="">
+                    <img id="creatividad-imagen" class="creatividad-imagen" src="img/frutal-postre.png" alt="">
+                    <img id="creatividad-imagen" class="creatividad-imagen" src="img/sirena-postre.png" alt="">
+                    <img id="creatividad-imagen" class="creatividad-imagen" src="img/murcielago-postre.png" alt="">
+
+                </div>
+
+                <div id="resultados"></div>
+
+
+            </section>
+
+            <section class="section-4">
+                <!-- <div class="contenedor-notipostre"> -->
+                    <h2 id="notipostre">Notipostres</h2>
+                    <p>Enterate todo sobre postres, sentite actualizado.</p>
+                    <iframe src="https://www.lanacion.com.ar/tema/postres-tid63993/"></iframe>
+                <!-- </div> -->
+            </section>
+
+
+
+            <section class="formulario">
+                <div class="contenedor-formulario">
+                    <h2 id="formulario">¡Envianos tu receta!</h2>
+                    <p>Si tienes una receta para compartir háznoslo saber.</p>
+                    <form method="post" action="https://formspree.io/f/xdorvvde" onsubmit="return validarFormulario()">
+
+
+                        <div>
+                            <div>
+                                <label for="Nombre">*Nombre</label>
+                                <br>
+                                <input type="text" name="Nombre" id="Nombre" maxlength="10" class="datos_contacto">
+                            </div>
+
+                            <br>
+
+
+                            <div>
+                                <label for="Correo electronico">*Correo electronico</label>
+                                <br>
+                                <input type="email" name="Correo_electronico" id="Correo_electronico"
+                                    class="datos_contacto">
+                            </div>
+
+                            <br>
+                        </div>
+
+
+
+                        <div>
+                            <label for="Dejanos tu consulta y nos estaremos comunicando a la brevedad">Dejanos tu
+                                consulta y
+                                nos
+                                estaremos comunicando a la brevedad.
+                            </label>
+                            <br>
+                            <textarea name="comentario" id="comentario" cols="30" rows="10" maxlength="600"
+                                placeholder="Escriba su comentario no mas de 20 caracteres"
+                                class="mensaje_contacto"></textarea>
+
+                            <h5>*datos obligatorios</h5>
+                        </div>
+
+                        <div class="botones-formulario">
+                            <input type="submit" value="Enviar" class="boton_form">
+                            <input type="reset" value="Borrar" class="boton_form">
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+
+
+
+        </main>
+
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/mobile.js"></script>
+</body>
+
+</html>
