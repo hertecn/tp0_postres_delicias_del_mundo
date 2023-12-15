@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edicion de Postres</title>
+    <link rel="shortcut icon" href="../img/icono.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- <header id="header"> -->
+    <!-- place navbar here -->
+    <!-- </header> -->
+
+    <div id="app" class="container">
+
+        <header class="header-mobile">
+            <h1 class="logo">Delicias del mundo</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+                <div class="icono-logo">
+                    <img class="icono" src="../img/icono.png" alt="">
+                    <div class="logo-delicias">
+                        <h1 class="logo">Delicias del<br>mundo</h1>
+                    </div>
+                </div>
+
+
+            </header>
+            <nav>
+                <ul>
+
+                    <li>
+                        <button onclick="window.location.href = 'iniciar_sesion.html';"
+                            class="boton-menu" id="button6">Iniciar session</button>
+                    </li>
+                    <li>
+                        <button onclick='window.location.href="../index.html#titulo-principal";' class="boton-menu"
+                            id="button1">Origen de los postres</button>
+                    </li>
+                    <li>
+                        <button onclick='window.location.href="../index.html#section-2";' class="boton-menu" id="button2">Recetas del
+                            mundo</button>
+                    </li>
+                    <li>
+                        <button onclick='window.location.href="../index.html#creativos";' class="boton-menu" id="button3">Postres
+                            creativos</button>
+                    </li>
+                    <li>
+                        <button onclick='window.location.href="../index.html#notipostre";' class="boton-menu"
+                            id="button4">Notipostres</button>
+                    </li>
+                    <li>
+                        <button onclick='window.location.href="../index.html#formulario";' class="boton-menu"
+                            id="button5">Contáctenos</button>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <footer>
+                <div class="container_footer">
+                    <div>
+                        <p class="text-footer">Diseñado por<br><span>Hernan Ledesma<br>y Joshelin Torres</span></p>
+                    </div>
+                </div>
+            </footer>
+        </aside>
+
+
+        <main>
+            <h2>Edicion de Recetas</h2>
+
+            <article v-for="postre in recetas" :key="postre.id" class="receta-container">
+                <div class="identificador">
+                    <label for="id">Id</label>
+                    <input type="number" name="id" id="id" disabled>
+
+                </div>
+                <div class="receta" id="receta">
+
+
+                    <div class="descripcion-edicion">
+
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" class="receta-titulo">
+                        <br>
+                        <br>
+
+                        <label for="descripcion">Descripcion</label>
+
+                        <textarea class="textareas-edicion" type="text" name="descripcion" id="descripcion"
+                            v-model="descripcion" rows="1" cols="40"></textarea>
+
+                        <br>
+                        <br>
+
+                        <label for="receta">Receta</label>
+
+                        <div class="contenedor-edicion-boton">
+                            <textarea class="textareas-edicion" type="text" name="rec" id="rec" v-model="rec" rows="10"
+                                cols="40"></textarea>
+                            <div class="boton-edit">
+                            <button type="button" class="btn-success" onclick="modificar()">Grabar</button>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <div>
+                            <label for="imagen">Imagen</label>
+
+                            <!-- <textarea type="text" name="imagen" id="imagen" v-model="imagen" rows="10"
+                                cols="40"></textarea> -->
+                            <input type="text" name="imagen" id="imagen" v-model="imagen">
+
+                           
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <!-- <div id="texto-receta5" class="texto-receta">
+
+                    <input type="text" name="descripcion" id="descripcion" v-model="descripcion">
+
+
+                </div> -->
+
+            </article>
+
+
+
+
+
+
+
+        </main>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"> </script>
+    <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../js/receta_editar.js"></script>
+</body>
+
+</html>

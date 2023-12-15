@@ -4,7 +4,9 @@ const boton2 = document.getElementById('button2');
 const boton3 = document.getElementById('button3');
 const boton4 = document.getElementById('button4');
 const boton5 = document.getElementById('button5');
+const boton6 = document.getElementById('button6');
 
+console.log("toco");
 // Agregar eventos de clic a los botones
 boton1.addEventListener('click', function () {
   boton1.classList.add('active'); // Activar el botón 1
@@ -12,6 +14,7 @@ boton1.addEventListener('click', function () {
   boton3.classList.remove('active'); // Desactivar el botón 3
   boton4.classList.remove('active'); // Desactivar el botón 4
   boton5.classList.remove('active'); // Desactivar el botón 5
+  boton6.classList.remove('active'); // Desactivar el botón 6
   aside.classList.remove("aside-visible");
 });
 
@@ -21,6 +24,7 @@ boton2.addEventListener('click', function () {
   boton3.classList.remove('active'); // Desactivar el botón 3
   boton4.classList.remove('active'); // Desactivar el botón 4
   boton5.classList.remove('active'); // Desactivar el botón 5
+  boton6.classList.remove('active'); // Desactivar el botón 6
   aside.classList.remove("aside-visible");
 });
 boton3.addEventListener('click', function () {
@@ -29,6 +33,7 @@ boton3.addEventListener('click', function () {
   boton3.classList.add('active'); // activar el botón 3
   boton4.classList.remove('active'); // Desactivar el botón 4
   boton5.classList.remove('active'); // Desactivar el botón 5
+  boton6.classList.remove('active'); // Desactivar el botón 6
   aside.classList.remove("aside-visible");
 });
 
@@ -38,6 +43,7 @@ boton4.addEventListener('click', function () {
   boton3.classList.remove('active'); // Desactivar el botón 3
   boton4.classList.add('active'); // activar el botón 4
   boton5.classList.remove('active'); // Desactivar el botón 5
+  boton6.classList.remove('active'); // Desactivar el botón 6
   aside.classList.remove("aside-visible");
 });
 boton5.addEventListener('click', function () {
@@ -46,9 +52,18 @@ boton5.addEventListener('click', function () {
   boton3.classList.remove('active'); // Desactivar el botón 3
   boton4.classList.remove('active'); // Desactivar el botón 4
   boton5.classList.add('active'); // activar el botón 5
+  boton6.classList.remove('active'); // Desactivar el botón 6
   aside.classList.remove("aside-visible");
 });
-
+boton6.addEventListener('click', function () {
+  boton1.classList.remove('active'); // desactivar el botón 1
+  boton2.classList.remove('active'); // Desactivar el botón 2
+  boton3.classList.remove('active'); // Desactivar el botón 3
+  boton4.classList.remove('active'); // Desactivar el botón 4
+  boton5.classList.remove('active'); // desactivar el botón 5
+  boton6.classList.add('active'); // activar el botón 6
+  aside.classList.remove("aside-visible");
+});
 
 //despliega receta1
 const btnreceta1 = document.getElementById('btn-receta1');
@@ -100,6 +115,7 @@ btnreceta4.addEventListener('click', function () {
 //despliega receta5
 const btnreceta5 = document.getElementById('btn-receta5');
 const receta5 = document.getElementById('texto-receta5');
+
 btnreceta5.addEventListener('click', function () {
   if (receta5.style.display === 'none' || receta5.style.display === '') {
     receta5.style.display = 'block';
