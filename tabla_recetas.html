@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fans de Postres</title>
+    <link rel="shortcut icon" href="img/icono.ico" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header-mobile">
+            <h1 class="logo">Delicias del mundo</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+                <div class="icono-logo">
+                    <img class="icono" src="img/icono.png" alt="">
+                    <div class="logo-delicias">
+                        <h1 class="logo">Delicias del<br>mundo</h1>
+                    </div>
+                </div>
+
+
+            </header>
+            <nav>
+                <ul>
+
+                    <li>
+                        <button onclick="window.location.href = './templates/iniciar_sesion.html';"
+                            class="boton-menu" id="button6">Iniciar session</button>
+                    </li>
+                    <li>
+                        <button onclick='window.location.href="index.html#titulo-principal";' class="boton-menu"
+                            id="button1">Origen de los postres</button>
+                    </li>
+                    <li>
+                        <button onclick='window.location.href="index.html#section-2";' class="boton-menu" id="button2">Recetas del
+                            mundo</button>
+                    </li>
+                    <li>
+                        <button onclick='window.location.href="index.html#creativos";' class="boton-menu" id="button3">Postres
+                            creativos</button>
+                    </li>
+                    <li>
+                        <button onclick='window.location.href="index.html#notipostre";' class="boton-menu"
+                            id="button4">Notipostres</button>
+                    </li>
+                    <li>
+                        <button onclick='window.location.href="index.html#formulario";' class="boton-menu"
+                            id="button5">Contáctenos</button>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <footer>
+                <div class="container_footer">
+                    <div>
+                        <p class="text-footer">Diseñado por<br><span>Hernan Ledesma<br>y Joshelin Torres</span></p>
+                    </div>
+                </div>
+            </footer>
+        </aside>
+
+        <main>
+            <div>
+
+                <label for="nombre">Usuario: </label>
+                <input type="text" name="usuario" id="usuario" disabled class="text-usuario">
+                <a class="btn-nuevo" href="./templates/receta_nueva.html">Agregar postre</a>
+
+
+
+
+                <div id="app">
+                    <article v-for="postre in recetasConLikes" :key="postre.id">
+                        
+                        <div class="receta" id="receta">
+
+                            <div class="img-emoji">
+                                <div class="identificador">
+                                    <h3>ID: {{postre.id}}</h3>
+                                </div>
+                                <!-- <img class="receta-imagen" :src="postre.imagen" :alt="postre.nombre"> -->
+                                <img width="400" :src="postre.imagen" :alt="postre.nombre">
+
+                                <div class="contenedor-heart">
+                                    <button type="button" @click="gusto(postre.id)" id="like">
+                                        <i class="bi bi-heart-fill"></i><span>
+                                            {{ postre.likeValor }}
+                                        </span>
+                                    </button>
+
+                                    <!-- <div @click="logInfo(postre)">
+                                            <p>Click aquí para ver la info de {{ postre.id }}</p>
+                                        </div> -->
+
+
+
+                                </div>
+                            </div>
+
+
+                            <div class="descripcion_tabla">
+                                <div>
+                                    <h3 class="receta-titulo-tabla">{{postre.nombre}}</h3>
+
+                                    <p class="parrafo-descripcion">{{postre.descripcion}}</p>
+
+                                </div>
+                                <br>
+                                <br>
+                                <label for="Ingredientes">Ingredientes</label>
+                                <p class="parrafo-descripcion">{{postre.receta}}</p>
+
+                            </div>
+
+
+
+
+                        </div>
+
+
+                        <div class="botones_edicion">
+                            <button class="botones_editar">
+                                <a :href="'./templates/receta_update.html?id='+postre.id+'&nombre='+postre.nombre+'&descripcion='+postre.descripcion+'&receta='+postre.receta+'&imagen='+postre.imagen"
+                                    style="color: white;">Editar</a>
+                            </button>
+                            <button type="button" class="btn-eliminar"
+                                v-on:click="eliminar(postre.id)">Eliminar</button>
+                        </div>
+                    </article>
+                </div>
+
+
+            </div>
+    </div>
+
+    </main>
+
+    </div>
+
+
+    <!-- <script src="js/index.js"></script> -->
+    <script src="js/mobile.js"></script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+    <!-- <script src="./js/main.js"></script> -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
+    <script src="./js/recetas.js"></script>
+    <!-- <script src="./js/index.js"></script> -->
+    <!-- <script src="./js/like.js"></script> -->
+</body>
+
+</html>
